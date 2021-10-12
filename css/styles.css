@@ -47,8 +47,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-flex-direction: column;}
+  flex-direction: column;
+}
 
 h3 {
   color: #003f4f;
+}
+
+.video-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
