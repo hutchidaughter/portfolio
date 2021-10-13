@@ -27,8 +27,7 @@
         </div>
       </nav>
 
-      <div class="about-wrapper"><h3>Contact Me</h3>	
-      </div>
+      <div class="about-wrapper"><h3>Contact</h3></div>
       <div class="form-wrapper">
         <div class="input-group mb-3">
           <input
@@ -36,6 +35,7 @@
             class="form-control"
             placeholder="First name"
             aria-label="First name"
+            id="firstName"
           />
 
           <input
@@ -43,6 +43,7 @@
             class="form-control"
             placeholder="Last name"
             aria-label="Last name"
+            id="lastName"
           />
         </div>
 
@@ -53,6 +54,7 @@
             placeholder="Email address"
             aria-label="Email address"
             aria-describedby="basic-addon2"
+            id="email"
           />
         </div>
 
@@ -63,6 +65,7 @@
             placeholder="Phone number"
             aria-label="Phone number"
             aria-describedby="basic-addon2"
+            id="phoneNumber"
           />
         </div>
 
@@ -72,6 +75,7 @@
             class="form-control"
             aria-label="Date for our meeting"
             aria-describedby="basic-addon2"
+            id="dateForOurMeeting"
           />
         </div>
 
@@ -80,15 +84,18 @@
             class="form-control"
             placeholder="Additonal comments"
             aria-label="Additonal comments"
+            id="additionalComments"
           ></textarea>
         </div>
         <div class="button-wrapper">
           <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Submit</button>
+            <button class="btn btn-primary" type="button" id="submitButton">
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./js/index.js"></script>
+  <script src="./js/contact.js"></script>
 </html>

@@ -35,6 +35,7 @@
 
 .btn:hover {
   background-color: #003f4f;
+  color: white;
 }
 
 .button-wrapper {
@@ -60,4 +61,30 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.map {
+  display: none;
+  max-height: 450px;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: #808080;
+  color: white;
+  cursor: not-allowed;
 }
