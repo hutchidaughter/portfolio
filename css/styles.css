@@ -38,9 +38,15 @@
   color: white;
 }
 
+.btn:active {
+  background-color: #003f4f;
+  color: white;
+}
+
 .button-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .about-wrapper {

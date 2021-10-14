@@ -32,3 +32,5 @@ let submitButton = document.getElementById("submitButton");
 //         }
 //     });
 //     })()
+
+let myModal = document.getElementById("myModal");
