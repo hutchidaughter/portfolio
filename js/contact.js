@@ -6,12 +6,10 @@ let dateForOurMeeting = document.getElementById("dateForOurMeeting");
 let additionalComments = document.getElementById("additionalComments");
 let submitButton = document.getElementById("submitButton");
 
-
 // formWrapper.addEventListener("onlick", (event) => {
 //   event.preventDefault();
 //   console.log(firstName);
 // });
-
 
 // (function() {
 //     $('form > input').keyup(function() {
@@ -25,12 +23,30 @@ let submitButton = document.getElementById("submitButton");
 //         if (empty)
 //         {
 //             $('#register').attr('disabled', 'disabled');
-//         } 
-//        else 
+//         }
+//        else
 //         {
 //             $('#register').removeAttr('disabled');
 //         }
 //     });
 //     })()
 
-let myModal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
+
+let btn = document.getElementById("myBtn");
+
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
