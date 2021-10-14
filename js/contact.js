@@ -5,31 +5,7 @@ let phoneNumber = document.getElementById("phoneNumber");
 let dateForOurMeeting = document.getElementById("dateForOurMeeting");
 let additionalComments = document.getElementById("additionalComments");
 let submitButton = document.getElementById("submitButton");
-
-// formWrapper.addEventListener("onlick", (event) => {
-//   event.preventDefault();
-//   console.log(firstName);
-// });
-
-// (function() {
-//     $('form > input').keyup(function() {
-//         var empty = false;
-//         $('form > input').each(function() {
-//             if ($(this).val() == '')
-//             {
-//                 empty = true;
-//             }
-//         });
-//         if (empty)
-//         {
-//             $('#register').attr('disabled', 'disabled');
-//         }
-//        else
-//         {
-//             $('#register').removeAttr('disabled');
-//         }
-//     });
-//     })()
+let formWrapper = document.getElementById("formWrapper");
 
 let modal = document.getElementById("myModal");
 
@@ -50,3 +26,21 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+submitButton.addEventListener("click", (event) => {
+  if (
+    firstName.value == "" ||
+    lastName.value == "" ||
+    email.value == "" ||
+    dateForOurMeeting.value == "" ||
+    phoneNumber.value == ""
+  ) {
+    event.preventDefault();
+    alert("Please complete the entire form prior to submission");
+  } else {
+    event.preventDefault();
+    alert(
+      `Thank you, ${firstName.value}! Our appointment has been set for ${dateForOurMeeting.value}`
+    );
+  }
+});
