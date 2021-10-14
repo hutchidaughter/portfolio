@@ -121,3 +121,11 @@ h3 {
   text-decoration: none;
   font-weight: bold;
 }
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
