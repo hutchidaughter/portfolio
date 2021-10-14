@@ -44,7 +44,7 @@
 }
 
 .about-wrapper {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,8 +55,8 @@ h3 {
   color: #003f4f;
 }
 
-.video-wrapper {
-  padding: 20px;
+.section-wrapper {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,4 +87,37 @@ h3 {
   background-color: #808080;
   color: white;
   cursor: not-allowed;
+}
+
+.git-picture {
+  height: 150px;
+  margin: 5px;
+}
+
+.git-picture img {
+  max-height: 150px;
+}
+
+.pages a {
+  color: #003f4f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pages a:link {
+  color: #003f4f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pages a:visited {
+  color: #003f4f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pages a:hover {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
 }
